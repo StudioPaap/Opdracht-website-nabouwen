@@ -1,0 +1,79 @@
+/*-------------------- 1. Global styles  ------------*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+:root {
+    --paars: #5722CD;
+    --Blauw: #4845E4;
+    --Roze: #ED4385;
+    --Zwart: #0C0C0C;
+    --Lichtpaars: #F2F0FF;
+}
+
+/*-------------------- 2. Typography  ------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+
+}
+
+/*-------------------- 3. Layout  ------------*/
+
+.content-container {
+    width: 60%;
+    height: auto;
+    border: 2px solid blue;
+
+}
+
+/*-------------------- 4. Areas  ------------*/
+
+
+/*---------------Header---------*/
+header {
+    border: yellow solid 2px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    width: 30%;
+    align-self: end;
+
+}
+
+nav ul {
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+    justify-content: space-around;
+}
+
+nav ul li {
+    border: green solid 2px;
+    list-style-type: none;
+}
+
+
+.header-text {
+    align-self: center;
+    padding: 50px 0;
+}
+
+.header-text h1, p {
+    text-align: center;
+}
