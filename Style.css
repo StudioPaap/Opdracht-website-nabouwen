@@ -18,6 +18,14 @@ a {
     --Lichtpaars: #F2F0FF;
 }
 
+.pink{
+    border: #ED4385 solid 2px;
+}
+
+.green {
+    border: green solid 2px;
+}
+
 /*-------------------- 2. Typography  ------------*/
 
 body {
@@ -32,27 +40,37 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------- 3. Layout  ------------*/
 
 .content-container {
-    width: 60%;
-    height: auto;
+    flex-basis: 500px;
     border: 2px solid blue;
 
 }
 
+section {
+    border: 1px solid yellow;
+}
+
+.image-container {
+    width: 400px;
+    border: orange 2px solid;
+}
+
+
+
+}
 /*-------------------- 4. Areas  ------------*/
 
 
-/*---------------Header---------*/
+/*--------------- 1.1 Header---------*/
 header {
     border: yellow solid 2px;
     display: flex;
     flex-direction: column;
-
+    background-color: var(--paars);
 }
 
 nav {
     width: 30%;
     align-self: end;
-
 }
 
 nav ul {
@@ -74,6 +92,31 @@ nav ul li {
     padding: 50px 0;
 }
 
-.header-text h1, p {
+.header-text h1 p {
     text-align: center;
+}
+
+
+/*!------Worksaction-----!*/
+
+.work-section{
+    display: flex;
+    flex-direction: column;
+
+.work-article{ border: purple 2px solid;
+}
+
+
+/*------Services section-------*/
+.Block-service{
+    border: aqua 2px solid;
+}
+
+.illustration{
+    width: 50px;
+    border: blueviolet solid 1px;
+}
+
+.grey {
+    border: solid 2px grey;
 }
