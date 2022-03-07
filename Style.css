@@ -37,8 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-.button-pink{
+.button-pink {
     background-color: var(--pink);
     border-radius: 15px;
     padding: 12px 25px;
@@ -57,8 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: flex;
     flex-direction: column;
-    background: rgb(75,73,224);
-    background: linear-gradient(90deg, rgba(75,73,224,1) 0%, rgba(87,34,205,1) 100%);
+    background: rgb(75, 73, 224);
+    background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
     align-items: center;
     padding: 20px 20px 0px 20px;
 }
@@ -90,6 +89,8 @@ nav a {
 
 .header-container {
     width: 60%;
+    padding-bottom: 80px;
+    position: relative;
 }
 
 .header-text {
@@ -99,29 +100,38 @@ nav a {
     color: var(--lpurple);
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 28px;
 }
 
-.header-text p{
+.header-text p {
     font-size: 12px;
     padding: 30px 0;
 }
 
-.squibble-container{
+.squibble-container {
     width: 50px;
     color: white;
-
-    margin-left: calc(50% - 50px /2);
-    margin-right: auto;
+    position: absolute;
+    left: calc(50% - 50px / 2);
+    bottom: 0px;
 }
 
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 1500px solid transparent;
+    border-bottom: 100px solid blue;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 
+}
 
 
 /*------ ------------------2.1 INTRO SECTION ----------------------*/
 
-.intro-section{
+.intro-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -136,16 +146,17 @@ nav a {
     text-align: center;
 
 }
+
 .intro-text p {
-   padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 .question {
     color: var(--black);
     font-family: Roboto;
     text-align: center;
-    font-size: 10px ;
-    padding-top: 30px ;
+    font-size: 10px;
+    padding-top: 30px;
 
 }
 
@@ -154,18 +165,17 @@ nav a {
 }
 
 
-
 /*!-------------------------- 3.1 WORK SECTION-----------------------!*/
 
-.work-section{
+.work-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 20px ;
+    padding: 80px 20px;
     background-color: #F3F6F9;
 }
 
-.work-article{
+.work-article {
 
     display: flex;
     flex-direction: row;
@@ -202,14 +212,14 @@ nav a {
     padding: 20px 0px;
 }
 
-.work-text a{
+.work-text a {
     font-size: 10px;
     padding: 30px 0px;
     font-weight: bold;
     color: var(--purple);
 }
 
-.work-text-reverse a{
+.work-text-reverse a {
     font-size: 10px;
     padding: 30px 0px;
     font-weight: bold;
@@ -222,31 +232,30 @@ nav a {
 }
 
 
-
 /*-------------------------- 4.1 SERVICE SECTION--------------------------*/
 
-.service-section{
+.service-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
 }
 
-.block-service-row1{
+.block-service-row1 {
     display: flex;
     justify-content: space-around;
     width: 80%;
     padding-bottom: 40px;
 }
 
-.block-service-row2{
+.block-service-row2 {
     display: flex;
     justify-content: space-around;
     width: 80%;
     padding-bottom: 80px;
 }
 
-.block-service{
+.block-service {
     border: var(--purple) 1px solid;
     width: 250px;
     height: 250px;
@@ -257,7 +266,7 @@ nav a {
     align-items: center;
     font-size: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
-    margin:20px;
+    margin: 20px;
     color: #7A7A7A;
 
 }
@@ -267,16 +276,16 @@ nav a {
     padding-bottom: 10px;
 }
 
-.illustration{
+.illustration {
     width: 50px;
     padding-bottom: 10px;
 }
 
 /*-------------------- 5.1 FORM SECTION ---------------------*/
 
-.form-section{
-    background: rgb(75,73,224);
-    background: linear-gradient(90deg, rgba(75,73,224,1) 0%, rgba(87,34,205,1) 100%);
+.form-section {
+    background: rgb(75, 73, 224);
+    background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
     padding-top: 80px;
     color: white;
     display: flex;
@@ -285,14 +294,15 @@ nav a {
 }
 
 .form-text h2, p {
-   text-align: center;
+    text-align: center;
     padding-bottom: 15px;
 }
-.form-text  p {
+
+.form-text p {
     font-size: 12px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     padding: 20px 0px 80px;
@@ -300,14 +310,14 @@ form{
 }
 
 
-form input[type=button]{
+form input[type=button] {
     width: 100px;
     align-self: center;
 }
 
 /*-------------------- 6.1 FOOTER SECTION ---------------------*/
 
-footer{
+footer {
     background-color: var(--black);
     color: white;
     font-size: 8px;
@@ -317,25 +327,20 @@ footer{
 }
 
 
-
-
 /*-------------------- 1.2.1 404 notfound ---------------------*/
-#page-nf{
+#page-nf {
 
     width: 80%;
 }
 
-.not-found{
-    background: rgb(75,73,224);
-    background: linear-gradient(90deg, rgba(75,73,224,1) 0%, rgba(87,34,205,1) 100%);
+.not-found {
+    background: rgb(75, 73, 224);
+    background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
     display: flex;
     justify-content: center;
     color: #F3F6F9;
     padding-top: 200px;
 }
-
-
-
 
 
 /*-------------------- MEDIAQUERIES ---------------------*/
@@ -356,6 +361,7 @@ footer{
     nav ul {
         display: flex;
         flex-direction: row;
+        padding: 0px;
     }
 
     nav ul li {
@@ -370,35 +376,31 @@ footer{
     }
 
     /*--------------- ------------------1.2 Header text---------------------------*/
-
     .header-container {
         width: 100%;
         padding: 0px 20px;
     }
 
 
-    .header-text h1{
+    .header-text h1 {
         font-size: 1.5rem;
     }
 
-    .header-text p{
+    .header-text p {
         font-size: 1.5rem;
         padding: 30px 0;
     }
 
-    .squibble-container{
+    .squibble-container {
         width: 50px;
         color: white;
 
-        margin-left: calc(50% - 50px /2);
-        margin-right: auto;
+        left: calc(50% - 50px / 2);
+
     }
 
     /*------ ------------------2.1 INTRO SECTION ----------------------*/
-
-
-
-    .intro-section{
+    .intro-section {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -418,6 +420,7 @@ footer{
         text-align: center;
 
     }
+
     .intro-text p {
         padding: 10px 0px;
         font-size: 1rem;
@@ -427,7 +430,7 @@ footer{
         color: var(--black);
         font-family: Roboto;
         text-align: center;
-        font-size: 1rem ;
+        font-size: 1rem;
 
 
     }
@@ -438,8 +441,7 @@ footer{
 
 
     /*!-------------------------- 3.1 WORK SECTION-----------------------!*/
-
-    .work-section{
+    .work-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -448,7 +450,7 @@ footer{
     }
 
 
-    .work-article{
+    .work-article {
 
         display: flex;
         flex-direction: column-reverse;
@@ -461,16 +463,16 @@ footer{
 
     }
 
-    .work-text h3{
+    .work-text h3 {
         font-size: 1.5rem;
         padding-top: 20px;
     }
 
-    .work-text-reverse{
-    padding: 0px
+    .work-text-reverse {
+        padding: 0px
     }
 
-    .work-text-reverse p{
+    .work-text-reverse p {
         padding-top: 20px;
         font-size: 1.5rem;
         text-align: left;
@@ -482,10 +484,10 @@ footer{
         text-align: left;
     }
 
-    .work-text-reverse h3{
+    .work-text-reverse h3 {
         font-size: 1.5rem;
-        padding-top: 20px;}
-
+        padding-top: 20px;
+    }
 
 
     .scribble-container {
@@ -493,14 +495,14 @@ footer{
         padding: 20px 0px;
     }
 
-    .work-text a{
+    .work-text a {
         font-size: 1rem;
         padding: 30px 0px;
         font-weight: bold;
         color: var(--purple);
     }
 
-    .work-text-reverse a{
+    .work-text-reverse a {
         font-size: 10px;
         padding: 30px 0px;
         font-weight: bold;
@@ -513,12 +515,11 @@ footer{
     }
 
     /*-------------------------- 4.1 SERVICE SECTION--------------------------*/
-
-    .service-section{
+    .service-section {
         display: block;
     }
 
-    .block-service-row1{
+    .block-service-row1 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -536,7 +537,7 @@ footer{
         width: 100%;
     }
 
-    .block-service{
+    .block-service {
         border: var(--purple) 1px solid;
 
         padding: 20px;
@@ -552,16 +553,15 @@ footer{
         padding-bottom: 10px;
     }
 
-    .illustration{
+    .illustration {
         width: 50px;
         padding-bottom: 10px;
     }
 
     /*-------------------- 5.1 FORM SECTION ---------------------*/
-
-    .form-section{
-        background: rgb(75,73,224);
-        background: linear-gradient(90deg, rgba(75,73,224,1) 0%, rgba(87,34,205,1) 100%);
+    .form-section {
+        background: rgb(75, 73, 224);
+        background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
         padding-top: 80px;
         color: white;
         display: flex;
@@ -573,11 +573,12 @@ footer{
         text-align: center;
         padding-bottom: 15px;
     }
-    .form-text  p {
+
+    .form-text p {
         font-size: 12px;
     }
 
-    form{
+    form {
         display: flex;
         flex-direction: column;
         padding: 20px 10px;
@@ -587,11 +588,19 @@ footer{
     }
 
 
-    form input[type=button]{
+    form input[type=button] {
         width: 175px;
         align-self: center;
         font-size: 1rem;
         border-radius: 20px;
+    }
 
+    footer {
+        padding: 10px 0px;
+    }
 
+    footer p {
+        padding-top: 5px;
+        font-size: 12px;
+    }
 }
