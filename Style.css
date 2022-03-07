@@ -11,20 +11,13 @@ a {
 
 
 :root {
-    --paars: #5722CD;
-    --Blauw: #4845E4;
-    --Roze: #ED4385;
-    --Zwart: #0C0C0C;
-    --Lichtpaars: #F2F0FF;
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --black: #0C0C0C;
+    --lpurple: #F2F0FF;
 }
 
-.pink{
-    border: #ED4385 solid 2px;
-}
-
-.green {
-    border: green solid 2px;
-}
 
 /*-------------------- 2. Typography  ------------*/
 
@@ -40,32 +33,33 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------- 3. Layout  ------------*/
 
 .content-container {
-    flex-basis: 500px;
-    border: 2px solid blue;
-
-}
-
-section {
-    border: 1px solid yellow;
-}
-
-.image-container {
-    width: 400px;
-    border: orange 2px solid;
+    width: 60%;
 }
 
 
-
+.button-pink {
+    background-color: var(--pink);
+    border-radius: 15px;
+    padding: 12px 25px;
+    font-size: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 8px;
 }
-/*-------------------- 4. Areas  ------------*/
 
 
-/*--------------- 1.1 Header---------*/
+/*-------------------------------------- 4. Areas ------------------ ------------*/
+
+
+/*--------------- ------------------1.1 Header---------------------------*/
 header {
-    border: yellow solid 2px;
     display: flex;
     flex-direction: column;
-    background-color: var(--paars);
+    background: rgb(75, 73, 224);
+    background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    align-items: center;
+    padding: 20px 20px 0px 20px;
 }
 
 nav {
@@ -74,7 +68,6 @@ nav {
 }
 
 nav ul {
-    border: 2px solid pink;
     display: flex;
     flex-direction: row;
     align-self: end;
@@ -82,41 +75,524 @@ nav ul {
 }
 
 nav ul li {
-    border: green solid 2px;
     list-style-type: none;
+
 }
 
+nav a {
+    color: var(--lpurple);
+
+}
+
+
+/*------ ------------------ 1.2 HEADER SECTION ----------------------*/
+
+.header-container {
+    width: 60%;
+    padding-bottom: 80px;
+    position: relative;
+}
 
 .header-text {
-    align-self: center;
-    padding: 50px 0;
-}
 
-.header-text h1 p {
     text-align: center;
+    padding: 60px 0;
+    color: var(--lpurple);
+}
+
+.header-text h1 {
+    font-size: 28px;
+}
+
+.header-text p {
+    font-size: 12px;
+    padding: 30px 0;
+}
+
+.squibble-container {
+    width: 50px;
+    color: white;
+    position: absolute;
+    left: calc(50% - 50px / 2);
+    bottom: 0px;
 }
 
 
-/*!------Worksaction-----!*/
 
-.work-section{
+
+/*------ ------------------2.1 INTRO SECTION ----------------------*/
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px 0px;
+    position: relative;
+}
+
+
+.intro-text {
+    font-family: Merriweather;
+    font-size: 16px;
+    color: var(--purple);
+    text-align: center;
+
+}
+
+.intro-text p {
+    padding: 10px 0px;
+}
+
+.question {
+    color: var(--black);
+    font-family: Roboto;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 30px;
+
+}
+
+.question a {
+    color: var(--purple);
+}
+
+
+/*!-------------------------- 3.1 WORK SECTION-----------------------!*/
+
+.work-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #F3F6F9;
+}
 
-.work-article{ border: purple 2px solid;
+.work-article {
+
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+}
+
+.work-article-reverse {
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 80px 0px;
+    max-width: 80%;
+}
+
+.work-text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding-right: 80px;
+}
+
+.work-text-reverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: 80px;
+}
+
+.scribble-container {
+    width: 30px;
+    padding: 20px 0px;
+}
+
+.work-text a {
+    font-size: 10px;
+    padding: 30px 0px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.work-text-reverse a {
+    font-size: 10px;
+    padding: 30px 0px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.image-container {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
-/*------Services section-------*/
-.Block-service{
-    border: aqua 2px solid;
+/*-------------------------- 4.1 SERVICE SECTION--------------------------*/
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
 }
 
-.illustration{
+.block-service-row1 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.block-service-row2 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding-bottom: 80px;
+}
+
+.block-service {
+    border: var(--purple) 1px solid;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    font-size: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+    margin: 20px;
+    color: #7A7A7A;
+
+}
+
+.block-service h3 {
+    color: var(--purple);
+    padding-bottom: 10px;
+}
+
+.illustration {
     width: 50px;
-    border: blueviolet solid 1px;
+    padding-bottom: 10px;
 }
 
-.grey {
-    border: solid 2px grey;
+/*-------------------- 5.1 FORM SECTION ---------------------*/
+
+.form-section {
+    background: rgb(75, 73, 224);
+    background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    padding-top: 80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-text h2, p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.form-text p {
+    font-size: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 80px;
+
+}
+
+
+form input[type=button] {
+    width: 100px;
+    align-self: center;
+}
+
+/*-------------------- 6.1 FOOTER SECTION ---------------------*/
+
+footer {
+    background-color: var(--black);
+    color: white;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+/*-------------------- 1.2.1 404 notfound ---------------------*/
+#page-nf {
+
+    width: 80%;
+}
+
+.not-found {
+    background: rgb(75, 73, 224);
+    background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    display: flex;
+    justify-content: center;
+    color: #F3F6F9;
+    padding-top: 200px;
+}
+
+
+/*-------------------- MEDIAQUERIES ---------------------*/
+
+
+/*-------------------- MEDIAQUERIES TELEFOON ---------------------*/
+
+@media only screen and (max-width: 600px) {
+    /*--------------- ------------------1.1 Header---------------------------*/
+    header {
+        padding: 20px 0px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        font-weight: bolder;
+
+    }
+
+    nav a {
+        color: var(--lpurple);
+
+    }
+
+    /*--------------- ------------------1.2 Header text---------------------------*/
+    .header-container {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 1.5rem;
+        padding: 30px 0;
+    }
+
+    .squibble-container {
+        width: 50px;
+        color: white;
+
+        left: calc(50% - 50px / 2);
+
+    }
+
+    /*------ ------------------2.1 INTRO SECTION ----------------------*/
+    .intro-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px 0px;
+        position: relative;
+    }
+
+    .content-container {
+        width: 80%;
+    }
+
+
+    .intro-text {
+        font-family: Merriweather;
+        font-size: 16px;
+        color: var(--purple);
+        text-align: center;
+
+    }
+
+    .intro-text p {
+        padding: 10px 0px;
+        font-size: 1rem;
+    }
+
+    .question {
+        color: var(--black);
+        font-family: Roboto;
+        text-align: center;
+        font-size: 1rem;
+
+
+    }
+
+    .question a {
+        color: var(--purple);
+    }
+
+
+    /*!-------------------------- 3.1 WORK SECTION-----------------------!*/
+    .work-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F3F6F9;
+        padding: 20px 5px;
+    }
+
+
+    .work-article {
+
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .work-article-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .work-text h3 {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+
+    .work-text-reverse {
+        padding: 0px
+    }
+
+    .work-text-reverse p {
+        padding-top: 20px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .work-text p {
+        padding-top: 20px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .work-text-reverse h3 {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+
+
+    .scribble-container {
+        width: 30px;
+        padding: 20px 0px;
+    }
+
+    .work-text a {
+        font-size: 1rem;
+        padding: 30px 0px;
+        font-weight: bold;
+        color: var(--purple);
+    }
+
+    .work-text-reverse a {
+        font-size: 10px;
+        padding: 30px 0px;
+        font-weight: bold;
+        color: var(--purple);
+    }
+
+    .image-container {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    /*-------------------------- 4.1 SERVICE SECTION--------------------------*/
+    .service-section {
+        display: block;
+    }
+
+    .block-service-row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+
+    }
+
+    .block-service-row2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .block-service {
+        border: var(--purple) 1px solid;
+
+        padding: 20px;
+        align-items: center;
+        font-size: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+        color: #7A7A7A;
+
+    }
+
+    .block-service h3 {
+        color: var(--purple);
+        padding-bottom: 10px;
+    }
+
+    .illustration {
+        width: 50px;
+        padding-bottom: 10px;
+    }
+
+    /*-------------------- 5.1 FORM SECTION ---------------------*/
+    .form-section {
+        background: rgb(75, 73, 224);
+        background: linear-gradient(90deg, rgba(75, 73, 224, 1) 0%, rgba(87, 34, 205, 1) 100%);
+        padding-top: 80px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-text h2, p {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .form-text p {
+        font-size: 12px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        width: 90%;
+        padding-bottom: 80px;
+
+    }
+
+
+    form input[type=button] {
+        width: 175px;
+        align-self: center;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+
+    footer {
+        padding: 10px 0px;
+    }
+
+    footer p {
+        padding-top: 5px;
+        font-size: 12px;
+    }
 }
