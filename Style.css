@@ -43,21 +43,22 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
     padding: 12px 25px;
     font-size: 10px;
-    box-shadow: 5px 4px rgba(56, 21, 134, 0.73);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
     color: white;
     font-weight: bold;
     font-size: 8px;
 }
 
 
-/*-------------------- 4. Areas  ------------*/
+/*-------------------------------------- 4. Areas ------------------ ------------*/
 
 
-/*--------------- 1.1 Header---------*/
+/*--------------- ------------------1.1 Header---------------------------*/
 header {
     display: flex;
     flex-direction: column;
-    background-color: var(--purple);
+    background: rgb(75,73,224);
+    background: linear-gradient(90deg, rgba(75,73,224,1) 0%, rgba(87,34,205,1) 100%);
     align-items: center;
     padding: 20px 20px 0px 20px;
 }
@@ -72,13 +73,11 @@ nav ul {
     flex-direction: row;
     align-self: end;
     justify-content: space-around;
-    flex-basis: 100%;
-    flex-shrink: 1;
-
 }
 
 nav ul li {
     list-style-type: none;
+
 }
 
 nav a {
@@ -87,15 +86,14 @@ nav a {
 }
 
 
-/*------ 1.2 HEADER SECTION ----*/
+/*------ ------------------ 1.2 HEADER SECTION ----------------------*/
 
 .header-container {
-    border: 2px solid blue;
     width: 60%;
 }
 
 .header-text {
-    border:2px solid orange;
+
     text-align: center;
     padding: 60px 0;
     color: var(--lpurple);
@@ -113,13 +111,16 @@ nav a {
 .squibble-container{
     width: 50px;
     color: white;
-    border: #ED4385 2px solid;
+
     margin-left: calc(50% - 50px /2);
     margin-right: auto;
 }
 
 
-/*------ 2.1 INTRO SECTION ----*/
+
+
+/*------ ------------------2.1 INTRO SECTION ----------------------*/
+
 .intro-section{
     display: flex;
     flex-direction: row;
@@ -152,14 +153,16 @@ nav a {
     color: var(--purple);
 }
 
-/*!------Worksaction-----!*/
+
+
+/*!-------------------------- 3.1 WORK SECTION-----------------------!*/
 
 .work-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px 20px ;
-    background-color: #f3f6f9;
+    background-color: #F3F6F9;
 }
 
 .work-article{
@@ -219,20 +222,23 @@ nav a {
 }
 
 
-/*------Services section-------*/
+
+/*-------------------------- 4.1 SERVICE SECTION--------------------------*/
+
 .service-section{
     display: flex;
     flex-direction: column;
-    border: #ED4385 2px solid;
     align-items: center;
+    padding-top: 80px;
 }
 
 .block-service-row1{
     display: flex;
     justify-content: space-around;
     width: 80%;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
+
 .block-service-row2{
     display: flex;
     justify-content: space-around;
@@ -244,20 +250,68 @@ nav a {
     border: var(--purple) 1px solid;
     width: 250px;
     height: 250px;
+    min-width: 250px;
+    min-height: 250px;
     display: flex;
     padding: 20px;
     align-items: center;
     font-size: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
     margin:20px;
+    color: var(--black)
 
 }
+
 .block-service h3{
     color: var(--purple);
     padding-bottom: 10%;
 }
+
 .illustration{
     width: 50px;
     padding-bottom: 10%;
 }
 
+/*-------------------- 5.1 FORM SECTION ---------------------*/
+
+.form-section{
+    background: rgb(75,73,224);
+    background: linear-gradient(90deg, rgba(75,73,224,1) 0%, rgba(87,34,205,1) 100%);
+    padding-top: 80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-text h2, p {
+   text-align: center;
+    padding-bottom: 15px;
+}
+.form-text  p {
+    font-size: 12px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 80px;
+
+}
+
+
+form input[type=button]{
+    width: 100px;
+    align-self: center;
+}
+
+/*-------------------- 6.1 FOOTER SECTION ---------------------*/
+
+footer{
+    background-color: var(--black);
+    color: white;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}

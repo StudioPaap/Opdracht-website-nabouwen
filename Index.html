@@ -14,21 +14,21 @@
 </head>
 <body>
 
-<!-- 1.1 Header-->
+<!-------------------------- 1.1 Header-------------------------->
 
 <header>
     <nav>
         <ul>
             <li>
-                <a href="#">Case studie</a>
+                <a href="#case-studie">Case studie</a>
             </li>
 
             <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
             </li>
 
             <li>
-                <a href="#">Contact Us</a>
+                <a href="#contact">Contact Us</a>
             </li>
 
         </ul>
@@ -52,7 +52,7 @@
 <main>
 
 
-    <!-- 2.1 INTRO SECTION -->
+    <!-------------------- 2.1 INTRO SECTION -------------------------->
     <section class="intro-section">
         <div class="content-container">
             <div class="intro-text">
@@ -66,8 +66,9 @@
         </div>
     </section>
 
-    <!-- Hier komt de sectie met WORK-->
+    <!-------------- 3.1 WORK SECTION-------------->
     <section class="work-section">
+        <a name="case-studie"></a>
         <article class="work-article">
             <div class="work-text">
                 <h3>Rolling Stone</h3>
@@ -112,8 +113,9 @@
     </section>
 
 
-    <!-- Hier komt de sectie met services-->
+    <!-------------- 4.1 SERVICE SECTION-------------->
     <section class="service-section">
+        <a name="services"></a>
         <div class="block-service-row1">
             <article class="block-service">
 
@@ -223,20 +225,21 @@
     </section>
 
 
-    <! -- Sectie met form -- !>
+    <!-------------- 5.1 FORM SECTION -------------->
 
 
-    <section>
-        <div class="grey">
+    <section class="form-section">
+        <a name="contact"></a>
+        <div class="form-text">
             <h2>
                 Let's work together
             </h2>
             <p>
                 Have a question? Need a quote? Let us know!
             </p>
-
         </div>
-        <form class="pink">
+
+        <form>
             <label for="name">Naam</label>
             <input type="name" id="name" name="Naam" placeholder="Name">
             <br>
@@ -247,14 +250,15 @@
             <textarea id="Message" name="message:" rows="4" cols="50">
             </textarea>
             <br>
-            <input type="button" id="send" value="send">
+            <input class="button-pink" type="button" id="send" value="send">
 
         </form>
+
     </section>
 
 </main>
 
-<!-- Hier komt de footer-->
+<!------------------- 6.1 FOOTER -------------------------->
 
 <footer>
     <p>Business website opdracht © NOVI Hogeschool 2022</p>
