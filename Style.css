@@ -117,16 +117,7 @@ nav a {
     bottom: 0px;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-right: 1500px solid transparent;
-    border-bottom: 100px solid blue;
-    position: absolute;
-    left: 0px;
-    top: 0px;
 
-}
 
 
 /*------ ------------------2.1 INTRO SECTION ----------------------*/
@@ -138,6 +129,7 @@ nav a {
     padding: 80px 0px;
     position: relative;
 }
+
 
 .intro-text {
     font-family: Merriweather;
